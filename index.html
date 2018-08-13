@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="plugins/chosen_v1.8.7/docsupport/style.css">
+    <link rel="stylesheet" href="plugins/chosen_v1.8.7/docsupport/prism.css">
+    <link rel="stylesheet" href="plugins/chosen_v1.8.7/chosen.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <main class="main">
+        <aside class="sidebar">
+            <form action="handler.php" method="get" class="filter">
+                <div class="categorys">
+                    <label for="category">Chose Category</label>
+                    <select name="category" id="category" class="chosen-select">
+                        <option value="Best Match">Best Match</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                    </select>
+                </div>
+                <fieldset class="subcategory">
+                    <legend>Chose Subcategory</legend>
+                    <span><input value="subcategories" type="checkbox" name="subcategories" id="subcategories">
+                    <label for="subcategories">All Subcategories</label></span>
+                    <span><input value= "entry" type="checkbox" name="entry" id="entry">
+                    <label for="entry">Data Entry <span>(1 306)</span></label>
+                    </span>
+                    <span><input value="assistant" type="checkbox" name="assistant" id="assistant">
+                    <label for="assistant">Personal Assistant <span>(1 907)</span></label>
+                    </span>
+                    <span><input value="research" type="checkbox" name="research" id="research">
+                    <label for="research">Web Research <span>(972)</span></label>
+                    </span>
+                    <span><input value="email" type="checkbox" name="email" id="email" checked>
+                    <label for="email">Email Response Handling <span>(80)</span></label>
+                    </span>
+                    <span><input value="transcription" type="checkbox" name="transcription" id="transcription" checked>
+                    <label for="transcription">Transcription <span>(307)</span></label>
+                    </span>
+                    <span><input value="other" type="checkbox" name="other" id="other" checked>
+                    <label for="other">Other - Administrative support</label></span>
+                </fieldset>
+                <fieldset class="client-rating">
+                    <legend>Client Rating</legend>
+                    <span><input value="any" type="radio" name="rating" id="any" checked>
+                    <label for="any">Any stars</label></span>
+                    <span><input value="five" type="radio" name="rating" id="five">
+                    <label for="five">5 stars <span>(930)</span></label>
+                    </span>
+                    <span><input value="4.5" type="radio" name="rating" id="4.5">
+                    <label for="4.5">4.5 stars and Up <span>(2 591)</span></label>
+                    </span>
+                    <span><input value="four" type="radio" name="rating" id="four">
+                    <label for="four">4 stars and Up <span>(1 546)</span></label>
+                    </span>
+                    <span><input value="unrated" type="checkbox" name="rating" id="unrated" checked>
+                    <label for="unrated">Include unrated freelancers <span>(1 784)</span></label>
+                    </span>
+                </fieldset>
+                <div class="any-inputs">
+                    <label for="Budget">Budget</label>
+                    <select name="Budget" id="Budget" class="chosen-select">
+                        <option value="Any budget">Any budget</option>
+                        <option value="0">0</option>
+                    </select>
+                    <label for="Delivery">Delivery</label>
+                        <select name="Delivery" id="Delivery" class="chosen-select">
+                            <option value="Any..">Any..</option>
+                            <option value="1">1</option>
+                        </select>
+                        <label for="Location">Location</label>
+                        <select name="Location" id="Location" class="chosen-select">
+                            <option value="Any Location">Any Location</option>
+                            <option value="2">2</option>
+                        </select>
+                </div>
+            </form>
+            <!-- <form action="js/handler.js" metod="get" class="rss-form hidden-visible"><input type="text" id="username" name="username"><input type="submit"></form> -->
+        </aside>
+        <section class="posts">
+            <h1 class="h1">Headling</h1>
+            <article class="post">
+                <h4 class="post-title title-color">SEO Review and Reccomendations</h4>
+                <div class="part-options">
+                    <span class="fixed"><span>Fixed:</span> <span>Regular</span></span>
+                    <span class="budget"><span>Budget:</span> <span>$300</span></span>
+                    <span class="delivery"><span>Delivery:</span> <span>Urgent</span></span>
+                    <span class="posted"><span>Posted:</span> <span>12 minutes ago</span></span>
+                    <span class="ends"><span>Ends:</span> <span>14d, 23h</span></span>
+                    <span class="proposals title-color"><span>0</span> <span>Proposals</span></span>
+                </div>
+                <div class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur... <a class="title-color" href="#">more</a> </div>
+                <div class="part-options">
+                    <span class="category"><span>Category:</span> <span>Search Engine</span></span>
+                    <span class="skils">
+                <span>Skills:</span></span>
+                    <span>.net-framework</span>
+                    <span>рhp</span>
+                    <span>google-maps-api</span>
+                    <a class="title-color" href="#"><span>18</span> more</a>
+                    <span class="country"><span>Client:</span> <span>United states</span></span> <span class="rating">4.8&nbsp;<img src="img/stars.png" alt=""></span>
+                </div>
+            </article>
+        </section>
+    </main>
+    <script src="plugins/chosen_v1.8.7/docsupport/jquery-3.2.1.min.js"></script>
+    <script src="plugins/chosen_v1.8.7/chosen.jquery.js"></script>
+    <script src="plugins/chosen_v1.8.7/docsupport/prism.js"></script>
+    <script src="plugins/chosen_v1.8.7/docsupport/init.js"></script>
+    <script src="js/custom.js"></script>
+</body>
+
+</html>

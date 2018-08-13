@@ -1,0 +1,186 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    outline: none;
+}
+
+html {
+    font: 10px Roboto, sans-serif;
+}
+
+body {
+    font-size: 1.3rem;
+    background-color: #fff;
+}
+
+span {
+    color: #444343;
+}
+
+label {
+    line-height: 1.8rem;
+}
+
+h4 {
+    font-size: 1.6rem;
+    line-height: 3rem;
+    margin-top: 9px;
+}
+
+.hidden-visible {
+    display: none;
+}
+
+.main {
+    display: flex;
+    width: 100%;
+    max-width: 1020px;
+    margin: 0 auto;
+}
+
+.sidebar {
+    width: 243px;
+    padding: 0 4rem 2rem 1rem;
+    background-color: #f5f5f2;
+}
+
+.filter,
+fieldset {
+    display: flex;
+    flex-direction: column;
+}
+
+.filter>label,
+legend {
+    font-size: 1.37rem;
+}
+
+.filter>* {
+    width: 207px;
+    margin: 1rem 0 .3rem;
+}
+
+.categorys label,
+.any-inputs label,
+legend {
+    font-weight: bold;
+    display: block;
+    padding: .65rem 0;
+}
+
+
+.filter input {
+    vertical-align: middle;
+}
+
+fieldset {
+    border: none;
+}
+
+fieldset span {
+    padding: 4px 0;
+}
+
+.filter span label {
+    padding-left: .9rem;
+}
+
+.categorys {
+    margin-bottom: 1.1rem;
+}
+
+.any-inputs label {
+    padding-top: 0;
+}
+
+.any-inputs label:not(:first-child) {
+    padding-top: 2.8rem;
+}
+
+.chosen-select {
+    width: 207px;
+}
+
+.posts {
+    width: 100%;
+    margin-left: 2.1rem;
+    padding-right: 7rem;
+}
+
+.post {
+    margin: 9px auto 13px auto;
+    padding: 0rem 2rem 1rem;
+    border: 1px solid #f0f0ed;
+    border-radius: .3rem;
+}
+
+.title-color,
+.title-color * {
+    color: #44ace9;
+}
+
+.part-options {
+    line-height: 2.5rem;
+
+    display: flex;
+    min-height: 3rem;
+    margin: 2px -5px 0;
+    flex-wrap: wrap;
+}
+
+.part-options>span {
+    margin: 0 5px;
+}
+
+.part-options span[class]:not(.title-color) span:nth-child(1) {
+    color: #80807d;
+}
+
+.skils~span:not([class]) {
+    padding: 0 1rem;
+    background-color: #f6f6f5;
+}
+
+.description {
+    font-family: "Times New Roman", serif;
+    padding: .8rem 0 2.2rem;
+    color: #252525;
+}
+
+.rating {
+    font-weight: bold;
+}
+
+.rating img {
+    vertical-align: middle;
+}
+
+.category:after {
+    display: inline-block;
+    width: 0;
+    height: 10px;
+    padding-left: 8px;
+    content: '';
+    border-right: 2px solid #f4f4f4;
+}
+
+@media (max-width: 779px) {
+    aside {
+        display: none;
+    }
+}
+
+@media (max-width: 475px) {
+    html {
+        font-size: 9.3px;
+    }
+}
+
+
+/*Заглушка*/
+
+.h1 {
+    margin-top: 50px;
+}
